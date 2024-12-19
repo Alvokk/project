@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ветеринарная клиника</title>
+    <link rel="styessheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
         <img class="header__logo" src="images/logo.jpg" alt="Логотип" width="400">
         <h1 class="header__title">Ветеринарная клиника</h1>
         <nav class="header__menu">
@@ -14,57 +16,55 @@
                 <li class="menu__item menu__item--active">
                     <a class="menu__linc" href="index.html">Главная</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__linc" href="#">О клинике</a>
+                <li a class="menu__item">
+                    <a class="menu__link" href="#">О клинике</a>
                 </li>    
                 <li class="menu__item">
-                    <a class="menu__linc" href="#">Контакты</a>
+                    <a class="menu__link" href="#">Контакты</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__linc" href="#">Услуги и цены</a>
+                    <a class="menu__link" href="#">Услуги и цены</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__linc" href="#">Отзывы</a> 
+                    <a class="menu__link" href="#">Отзывы</a> 
                 </li>
                 <li class="menu__item">
-                    <a class="menu__linc" href="#">Клиентам</a>
+                    <a class="menu__link" href="#">Клиентам</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__linc" href="#">Записаться на приём</a>  
-                </li>
+                    <a class="menu__link" href="#">Записаться на приём</a>  
             </ul>
         </nav>
-        <a class="header__button" href="login.html">Вход</a>
-        <a class="header__button" href="registration.html">Регистрация</a>
+        <a class="header__button button" href="login.html">Вход</a>
+        <a class="header__button button" href="registration.html">Регистрация</a>
     </header>
-
-    <main class="main">
-        <div class="services"> 
-            <h2 class="services__title">Популярные услуги</h2>
-            <div class="services__card">
-                <img class="services__image" src="images/1.jpg" alt="" width="500">
-                <p class="services__name">Осмотр животного</p>
+    <main class="main container">
+        <section class="teachers"> 
+            <h2 class="techers__title">Популярные услуги</h2>
+            <div class="teachers__card">
+                <img src="images/1.jpg" alt="" width="500">
+                <p>Осмотр животного</p>
             </div>
-            <div class="services__card">
-                <img class="services__image" src="images/2.jpg" alt="" width="500">
-                <p class="services__name">Кастрация и стерелизация</p>
+            <div class="teachers__card">
+                <img src="images/2.jpg" alt="" width="500">
+                <p>Кастрация и стерелизация</p>
             </div>
-            <div class="services__card">
-                <img class="services__image" src="images/3.jpg" alt="" width="500">
-                <p class="services__name">Вакцинация животных</p>
+            <div class="teachers__card">
+                <img src="images/3.jpg" alt="" width="500">
+                <p>Вакцинация животных</p>
             </div>
-            <div class="services__card">
-                <img class="services__image" src="images/4.jpg" alt="" width="500">
-                <p class="services__name">Узи кошек и собак</p>
+            <div class="techers__card">
+                <img src="images/4.jpg" alt="" width="500">
+                <p>Узи кошек и собак</p>
             </div>   
-            <div class="servises__card">
-                <img class="services__image" src="images/5.jpg" alt="" width="500">
-                <p class="services__name">Рентген</p>
+            <div class="teachers__card">
+                <img src="images/5.jpg" alt="" whilde="500">
+                <p>Рентген</p>
             </div>
-        </div>
+        </section>
     </main>
-    <footer class="footer"> 
-        <p class="footer__author">Волкова Алёна группа ВТ-21</p>
+    <footer class="footer container"> 
+       <p class="footer__autor">Волкова Алёна BT-21</p>
     </footer>
 </body>
 </html>

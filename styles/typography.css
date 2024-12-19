@@ -1,0 +1,11 @@
+/* Контейнер-обёртка */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.button{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #a84b4b;
+}
