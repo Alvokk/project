@@ -9,8 +9,14 @@
 </head>
 <body>
     <header class="header container">
+        <a class="header__logo-wrap" href="index.html">
         <img class="header__logo" src="images/logo.jpg" alt="Логотип" width="400">
         <h1 class="header__title">Ветеринарная клиника</h1>
+        </a>
+        <div class="header__buttons">
+            <a class="header__button button" href="login.html">Вход</a>
+            <a class="header__button button" href="registration.html">Регистрация</a>
+            </div>
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item menu__item--active">
@@ -35,31 +41,35 @@
                     <a class="menu__link" href="#">Записаться на приём</a>  
             </ul>
         </nav>
-        <a class="header__button button" href="login.html">Вход</a>
-        <a class="header__button button" href="registration.html">Регистрация</a>
     </header>
     <main class="main container">
-        <section class="teachers"> 
-            <h2 class="techers__title">Популярные услуги</h2>
+        <section class="about"> 
+            <div class="about__wrap-left">
+            <h2 class="about__title">Популярные услуги</h2>
             <div class="teachers__card">
                 <img src="images/1.jpg" alt="" width="500">
-                <p>Осмотр животного</p>
+                <p>Осмотр животного</p>  
+                <a class="about__button" href="#">Записаться</a>
             </div>
-            <div class="teachers__card">
+            <div class="about__wrap-right">
                 <img src="images/2.jpg" alt="" width="500">
                 <p>Кастрация и стерелизация</p>
+                <a class="about__button" href="#">Записаться</a>
             </div>
-            <div class="teachers__card">
+            <div class="about__wrap-right">
                 <img src="images/3.jpg" alt="" width="500">
                 <p>Вакцинация животных</p>
+                <a class="about__button" href="#">Записаться</a>
             </div>
-            <div class="techers__card">
+            <div class="about__wrap-right">
                 <img src="images/4.jpg" alt="" width="500">
                 <p>Узи кошек и собак</p>
+                <a class="about__button" href="#">Записаться</a>
             </div>   
-            <div class="teachers__card">
+            <div class="about__wrap-right">
                 <img src="images/5.jpg" alt="" whilde="500">
                 <p>Рентген</p>
+                <a class="about__button" href="#">Записаться</a>
             </div>
         </section>
     </main>
