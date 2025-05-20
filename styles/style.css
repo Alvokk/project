@@ -4,6 +4,9 @@
 @import "base.css";
 /* Подключение стилей относящихся к header */
 @import "header.css";
+@import "about.css";
+@import "price.css";
+@import "special.css";
 @import "typography.css";
 /* Подключение стилей относящихся к footer */
 @import "footer.css";

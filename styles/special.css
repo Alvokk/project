@@ -1,0 +1,37 @@
+
+
+.special__card {
+    padding: 0;
+    height: fit-content;
+}
+
+.special__card > button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.special__card > img {
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.special__card > h4 {
+    font-weight: 100;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.special__card > hr {
+    margin: 10px 0;
+    border: 1px solid gray;
+}
+
+.special__card p {
+    padding:    10px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}

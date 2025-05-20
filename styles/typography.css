@@ -2,10 +2,33 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    align-items: center;
 }
 .button{
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 600;
     background-color: #a84b4b;
+}
+
+.title-site {
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 900;
+    text-align: center;
+}
+
+
+.section__title {
+    font-size: clamp(26px, 4vw, 36px);
+    font-weight: 700;
+    margin-left: clamp(10px, 10vw, 300px);
+    margin-bottom: 50px;
+}
+
+.section__subtitle {
+    font-size: 24px;
+    font-weight: 100;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
 }

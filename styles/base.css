@@ -1,36 +1,102 @@
 *,
 ::before,
 ::after {
-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html,
 body {
-font-family: 'Arial', sans-serif;
-font-size: 40px;
-line-height: 30px;
-color: #000000;
-background-color: #ffffffe3;
-overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: "Arial", sans-serif;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ecf2f7be;
+    overflow-x: hidden;
 }
+
+strong {
+    font-weight: 900;
+}
+
+a {
+  color: #3a3c41;
+  text-decoration: none;
+}
+
 img {
-display: block;
-max-width: 100%;
-height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
+
+button {
+    min-height: 60px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #fd00b1;
+    border: 1px solid #fd00b1;
+    border-radius: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.4s ease-out, color 0.4s ease-out;
+}
+
+
+
+@media (hover:hover) {
+    button:hover {
+        color: #ffffff;
+        /* background-color: #fdb100; */
+        background-color: #fd00b1;
+    }
+}
+
 .visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-padding: 0;
-white-space: nowrap;
-border: 0;
-clip-path: inset(100%);
-clip: rect(0 0 0 0);
-overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-.container{
-    width: 1440;
-    margin-left: auto;
-    margin-right: auto;
+.container {
+  width: 1440;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(221, 221, 221);
+    max-width: 340px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.card > p {
+    font-size: 18px;
+}
+
+.absolute-img {
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.6;
+    aspect-ratio: 1/1;
+    z-index: -1;
 }

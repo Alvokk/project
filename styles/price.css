@@ -1,0 +1,35 @@
+
+
+#price {
+    position: relative;
+}
+
+.price__cards {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.price__card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    transition: scale .2s;
+}
+
+@media (hover:hover) {
+    .price__card:hover {
+        scale: 1.08;
+    }
+}
+
+.price__img {
+    top: 0;
+    right: 100px;
+    width: 200px;
+    z-index: -1;
+    opacity: 0.4;
+}
