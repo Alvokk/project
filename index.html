@@ -4,215 +4,643 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ветеринарная клиника</title>
-    <link rel="styessheet" href="styles/normalize.css">
+    <!-- <link rel="styessheet" href="styles/normalize.css"> -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header container">
+    <header class="header">
         <a class="header__logo-wrap" href="index.html">
-        <img class="header__logo" src="images/logo.jpg" alt="Логотип" width="400">
-        <h1 class="header__title">Ветеринарная клиника "Четыре лапы"</h1>
+            <img class="header__logo" src="images/logo.jpg" alt="Логотип" width="400">
         </a>
-        <div class="header__buttons">
-            <a class="header__button button" href="login.html">Вход</a>
-            <a class="header__button button" href="registration.html">Регистрация</a>
-            </div>
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item menu__item--active">
-                    <a class="menu__linc" href="index.html">Главная</a>
+                    <a class="menu__link" href="#">Главная</a>
                 </li>
                 <li a class="menu__item">
-                    <a class="menu__link" href="#">О клинике</a>
+                    <a class="menu__link" href="#about">О клинике</a>
                 </li>    
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Контакты</a>
+                    <a class="menu__link" href="#contacts">Контакты</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Услуги и цены</a>
+                    <a class="menu__link" href="#price">Услуги и цены</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Отзывы</a> 
+                    <a class="menu__link" href="#reviews">Отзывы</a> 
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Клиентам</a>
+                    <a class="menu__link" href="#to-clients">Клиентам</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Записаться на приём</a>  
+                    <a class="menu__link" href="#feedback">Записаться на приём</a>  
+                </li> 
             </ul>
+        
         </nav>
+        <div class="header__buttons">
+            <a class="header__button" href="login.html">Вход</a>
+            <a class="header__button" href="registration.html">Регистрация</a>
+        </div>
+        <details class="menu__burger">
+            <summary>
+                <div></div>
+                <div></div>
+                <div></div>
+            </summary>
+            <nav class="header__menu__min-screen">
+                <ul class="menu__min-screen">
+                    <li class="menu__item__min-screen menu__item--active__min-screen">
+                        <a class="menu__link__min-screen" href="#">Главная</a>
+                    </li>
+                    <li a class="menu__item__min-screen">
+                        <a class="menu__link__min-screen" href="#about">О клинике</a>
+                    </li>    
+                    <li class="menu__item__min-screen">
+                        <a class="menu__link__min-screen" href="#contacts">Контакты</a>
+                    </li>
+                    <li class="menu__item__min-screen">
+                        <a class="menu__link__min-screen" href="#price">Услуги и цены</a>
+                    </li>
+                    <li class="menu__item__min-screen">
+                        <a class="menu__link__min-screen" href="#reviews">Отзывы</a> 
+                    </li>
+                    <li class="menu__item__min-screen">
+                        <a class="menu__link__min-screen" href="#to-clients">Клиентам</a>
+                    </li>
+                    <li class="menu__item__min-screen">
+                        <a class="menu__link__min-screen" href="#feedback">Записаться на приём</a>
+                    </li> 
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>Об организации</h2>
-            <h1> Ветеринарная клиника "Четыре лапы"</h1>
-            <p>Ветеринарная клиника оказывает широкий спектр ветеринарных услуг. В клинике работают высококвалифицированные,
-                опытные и ответственные ветеринарные врачи, которые быстро и качественно решат проблеммы Ваших любимых питомцев
-            В распоряжении врачей клиники имеется профессиональное современное оборудование.Кроме того, врачи ветеринарной клиники 
-            большое внимание уделяют профилактике и ранней диагностике заболеваний животных.В клинике имеется собственный авотомобиль, и врач 
-            может приехать на дом к своему пациенту, при необходимости забрать в клинику для обследования и привезти обратно.</p>
-            <h2> График работы</h2>
-            <p>Понедельник с 8:00-17:00</p>
-            <p>Вторник с 8:00-17:00</p>
-            <p>Среда с 8:00-17:00</p>
-            <p>Четверг с 8:00-17:00</p>
-            <p>Пятница с 8:00-17:00</p>
-            <p>Суббота-выходной</p>
-            <p>Воскресенье-выходной</p>
-            <p>Обед с 12:00-13:00</p>
-    <main class="main container">
-        <section class="about"> 
-            <div class="about__wrap-left">
-            <h2 class="about__title">Услуги и цены</h2>
-            <div class="teachers__card">
-                <img src="images/1.jpg" alt="" width="500">
-                <p>Осмотр животного</p>  
-                <a class="about__button" href="#">Записаться</a>
-                <p>Первичный приём от 1200 рублей</p>
-                <p>Повторный приём 950 рублей</p>
-                <p>Процедурный приём 370 рублей</p>
-                <p>Инъекция внутримышечная 110 рублей</p>
-                <p>Инъекция внутривенная 350 рублей</p>
-                <p>Инъекция субокципитальная 500 рублей</p>
-                <p>Приём экзотических живтных 1500 рублей</p>
-                <p>Приём повторный экзотических живтных 950 рублей</p>
-                <p>Приём диетолога 1200 рублей</p>
-                <p>Приём диетолога повторный 950 рублей</p>
-                <p>Консультация (без животного) от 350 рублей</p>
-            </div>
-            <div class="about__wrap-right">
-                <img src="images/2.jpg" alt="" width="500">
-                <p>Кастрация и стерелизация</p>
-                <a class="about__button" href="#">Записаться</a>
-                <p>Кастрация кобеля от 6000-13000 рублей</p>
-                <p>Кастрация суки от 7000-20000 рублей</p>
-                <p>Стерелизация кошки 3900 рублей</p>
-                <p>Кастрация кота 1750 рублей</p>
-                <p>Кастрация самца грызунов 2200 рублей</p>
-                <p>Кастрация самок грызунов 3000 рублей</p>
-                <p>Кастрация самца хорька,кролика 2200 рублей</p>
-                <p>Кастрация самки хорька,кролика 4500 рублей</p>
-            </div>
-            <div class="about__wrap-right">
-                <img src="images/3.jpg" alt="" width="500">
-                <p>Вакцинация животных</p>
-                <a class="about__button" href="#">Записаться</a>
-                <p>Вакцинация кошки Мультфел-4 от 1790-2070 рублей</p>
-                <p>Вакцинация кошки Биофел РСН от 1780-2290 рублей</p>
-                <p>Вакцинация кошки от бешенства Рабифелл с приёмом 1230 рублей</p>
-                <p>Вакцинация собаки Рабикс(R) с приёмом 1240 рублей</p>
-                <p>Вакцинация собаки Биокан DHPPI+RL с приёмом 1240 рублей</p>
-                <p>Вакцинация собаки Мультикан-8 с приёмом 1240 рублей</p>
-                <p>Ветеринарный паспорт</p>
-            </div>
-            <div class="about__wrap-right">
-                <img src="images/4.jpg" alt="" width="500">
-                <p>Узи кошек и собак</p>
-                <a class="about__button" href="#">Записаться</a>
-                <p>Узи органов брюшной полости</p>
-                <p>Узи по беременности</p>
-                <p>Узи мочевого пузыря, почек 650 рублей</p>
-                <p>Узи сердца от 950 рублей</p>
-                <p>Узи ЖКТ 600 рублей</p>
-                <p>Узи перистальтики ЖКТ 300 рублей</p>
-                <p>Узи почек 500 рублей</p>
-                <p>Узи глаз 400 рублей</p>
-                <p>Узи головного мозга 400 рублей</p>
-                <p>Узи грудной клетки 450 рублей</p>
-                <p>Узи кожного покрова 400 рублей</p>
-                <p>Узи матки 450 рублей</p>
-                <p>Узи на наличие свободной жидкости в брюшной полости 350 рублей</p>
-                <p>Узи надпочечников 450 рублей</p>
-                <p>Узи печени и желчного пузыря 700 рублей</p>
-                <p>Узи поджелудочной железы 450 рублей</p>
-                <p>Узи предстательной железы 450 рублей</p>
-                <p>Узи семенников 450 рублей</p>
-                <p>Узи шейной области 500 рублей</p>
-                <p>Узи щитовидной железы 700 рублей</p>
-            </div>   
-            <div class="about__wrap-right">
-                <img src="images/5.jpg" alt="" whilde="500">    
-                <p>Рентген</p>
-                <a class="about__button" href="#">Записаться</a>
-                <p>Цифровой рентген 1 проекция 850 рублей</p>
-                <p>Цифровой рентген 2 проекции 1400 рублей</p>
-                <p>Описание рентгеновского снимка 500 рублей</p>
-                <p>Рентгенологическое обследование черепа,шеи 1450 рублей</p>
-                <p>Рентгенологическое исследование органов грудной полости 2000-2700 рублей</p>
-                <p>Рентгенологическое исследование тазобедренного сустава</p>
-                <p>Рентгенологическое исследование локтевого сустава</p>
-            </div>
-            <div class="about__wrap-right">
-                <img src="images/6.jpg" alt="" width="500">
-                <p>Другие услуги</p>
-                <p>Стоматология</p>
-                <a class="about__button" href="#">Записаться</a>
-                <p>Приём стоматолога 1350 рублей</p>
-                <p>Чистка зубов ультразвуком , кошка (с рентгеном ,анастезией) 5100 рублей</p>
-                <p>Субтотальная экстракция зубов,кошка/ собака 3000/6700 рублей</p>
-                <p>Экстракция 1 зуба, кошка / собака 7600/8300</p>
-                <p>Стачивание зубов у грызунов 1020 рублей</p>
-                <p>Обрезка передних зубов кролика 470 рублей</p>
-                <p>Груминг</p>
-                <a class="about__button" href="#">Записаться</a>
-                <p>Приклеивание "Антицарапок" 300 рублей</p>
-                <p>Обрезка когтей кошки/кролики 250 рублей</p>
-                <p>Обрезка когтей собакам до 15 кг/более 15 кг 370/400 рублей</p>
-                <p>Подготовка к вязке и вязка</p>
-                <a class="about__button" href="#">Записаться</a>
-                <p>Вязка собак 1000 рублей</p>
-                <p>Онлайн консультация</p>
-                <a class="about__button" href="#">Записаться</a>
-                <p>Консультация специалиста онлайн 900 рублей</p>
-                <p>
-            </div>
+        <h1 class="title-site">Ветеринарная клиника "Четыре лапы"</h1>
+        <section id="about">
+            <h2 class="section__title">Об организации</h2>
+            <div class="about__content">
+                <div class="about__description">
+                    <div style="background-image: url('images/about1.jpg');">
+                        <p>В клинике работают высококвалифицированные,
+                            опытные и ответственные ветеринарные врачи, которые быстро и качественно решат проблеммы ваших любимых питомцев
+                            В распоряжении врачей клиники имеется профессиональное современное оборудование.
+                        </p>
+                    </div>
+                    <div style="background-image: url('images/about2.jpg');">
+                        <p>Ветеринарная клиника оказывает широкий спектр ветеринарных услуг.Кроме того, врачи ветеринарной клиники 
+                        большое внимание уделяют профилактике и ранней диагностике заболеваний животных.
+                        </p>
+                    </div>
+                    <div style="background-image: url('images/about3.jpg');">
+                        <p>В клинике имеется собственный авотомобиль, и врач 
+                        может приехать на дом к своему пациенту, при необходимости забрать в клинику для обследования и привезти обратно.
+                        </p>
+                    </div>
+                </div>
+                <div class="about__graphic">
+                    <h3 class="section__subtitle">График работы</h3>
+                    <div class="about__graphic__content">
+                        <div class="about__days">
+                            <p>Понедельник</p>
+                            <span>8:00-17:00</span>
+                        </div>
+                        <div class="about__days">
+                            <p>Вторник</p>
+                            <span>8:00-17:00</span>
+                        </div>
+                        <div class="about__days">
+                            <p>Среда</p>
+                            <span>8:00-17:00</span>
+                        </div>
+                        <div class="about__days">
+                            <p>Четверг</p>
+                            <span>8:00-17:00</span>
+                        </div>
+                        <div class="about__days">
+                            <p>Пятница</p>
+                            <span>8:00-17:00</span>
+                        </div>
+                        <div class="about__days">
+                            <p>Воскресенье</p>
+                            <span>выходной</span>
+                        </div>
+                        <div class="about__days">
+                            <p>Суббота</p>
+                            <span>выходной</span>
+                        </div>
+                        <div class="about__days">
+                            <p>Обед</p>
+                            <span>12:00-13:00</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <h2>Специалисты</h2>
-        <p>Иванов Дмитрий Александрович</p>
-        <img src="images/7.jpg" alt="" width="500">
-        <a class="about__button" href="#">Записаться</a>
-        <p>Главный врач клиники,врач-терапевт, врач визуальной диагностики (УЗИ, рентген)
-        Закончил Марийский аграрный колледж по специальности “Ветеринария”.
-        В данный момент получает высшее образование в МарГУ, по специальности “Ветеринария”.
-        Пройденные курсы:
-        - в 2021 годЫу прослушал лекции на тему: “Визуальная диагностика грудной полости, брюшной полости” в г. Екатеринбурге, лектор Видянова Зоя Борисовна, врач визуальной диагностики высшей категории
-        - курсы УЗИ мелких домашних животных в г Екатеринбург, лектор Видянова Зоя Борисовна, врач визуальной диагностики высшей категории
-        - декабрь 2021 года, прошел обучение по торакальной рентгенографии в г Екатеринбург, лектор Клавдия Навлетова
-        - В 2021 году прослушал лекции по теме: Внутренние болезни.
-        Модуль 1. “Анамнез, осмотр, рутинные тесты и диагностический план ”
-        Модуль 2. “Нефрология – болезни почек и мочевыделительных путей”
-        Модуль 3. “Анемии, болезни почек и МВП, репродуктивных органов”, в  Образовательном центре коллегии ветеринарных специалистов “ Eduvet ”
-        - в мае 2022 года прошел обучение по рентгенограмме грудной клетки, лектор Симаков Матвей Сергеевич, ведущий специалист визуальной диагностики в клинике Вет Сити Центр, г  Москва</p>
-        <p>Волкова Ольга Ивановна</p>
-        <img src="images/8.jpg" alt="" width="500">
-        <a class="about__button" href="#">Записаться</a>
-        <p>Врач общей практики. 
-            Лечение всех внутренних болезней животных (гастроэнтерология, нефрология, пульмонология, инфекционные болезни, 
-        гематология, базовая неврология, оказание экстренной помощи). 
-        Основная специализация - онкология, интенсивная терапия.
+
+        <section id="price"> 
+            <h2 class="section__title">Услуги и цены</h2>
+            <h3 class="section__subtitle">Осмотр животного</h3>
+            <!-- <img class="absolute-img price__img" src="images/1.jpg" alt="" width="500"> -->
+            <div class="price__cards cards">
+                <article class="card price__card">
+                    <p>Первичный приём от <strong>1200</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Повторный приём <strong>950</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Процедурный приём <strong>370</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Инъекция внутримышечная <strong>110</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Инъекция внутривенная <strong>350</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Инъекция субокципитальная <strong>500</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Приём экзотических животных <strong>1500</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Повторный приём экзотических животных <strong>950</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Приём диетолога <strong>1200</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Приём диетолога повторный <strong>950</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Консультация (без животного) от <strong>350</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+
+            </div>
+
+            <h3 class="section__subtitle">Кастрация и стерелизация</h3>
+            <!-- <img src="images/2.jpg" alt="" width="500"> -->
+            <div class="cards price__cards">
+                 <article class="card price__card">
+                    <p>Кастрация кобеля от <strong>6000-13000</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                 <article class="card price__card">
+                    <p>Кастрация суки от <strong>7000-20000</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                 <article class="card price__card">
+                    <p>Стерелизация кошки <strong>3900</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                 <article class="card price__card">
+                    <p>Кастрация кота <strong>1750</strong> рублейрублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                 <article class="card price__card">
+                    <p>Кастрация самца грызунов <strong>2200</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                 <article class="card price__card">
+                    <p>Кастрация самок грызунов <strong>3000</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                 <article class="card price__card">
+                    <p>Кастрация самца хорька, кролика <strong>2200</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Кастрация самки хорька,кролика <strong>4500</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+            </div>
+            <h3 class="section__subtitle">Вакцинация животных</h3>
+            <div class="price__cards cards">
+                <!-- <img src="images/3.jpg" alt="" width="500"> -->
+
+                <article class="card price__card">
+                    <p>Вакцинация кошки Мультфел-4 от <strong>1790-2070</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Вакцинация кошки Биофел РСН от <strong>1780-2290</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Вакцинация кошки от бешенства Рабифелл с приёмом <strong>1230</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Вакцинация собаки Рабикс(R) с приёмом <strong>1240</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Вакцинация собаки Биокан DHPPI+RL с приёмом <strong>1240</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+
+                <article class="card price__card">
+                    <p>Вакцинация собаки Мультикан-8 с приёмом <strong>1240</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+
+
+            </div>
+
+            <h3 class="section__subtitle">Узи кошек и собак</h3>
+            <!-- <img src="images/4.jpg" alt="" width="500"> -->
+            <div class="price__cards cards">
+                <article class="card price__card">
+                    <p>Узи органов брюшной полости</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи по беременности</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи мочевого пузыря, почек <strong>650</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи сердца от <strong>950</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи ЖКТ <strong>600</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи перистальтики ЖКТ <strong>300</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи почек <strong>500</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи глаз <strong>400</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи грудной клетки <strong>450</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи кожного покрова <strong>400</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи матки <strong>450</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи на наличие свободной жидкости в брюшной полости <strong>350</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи надпочечников <strong>450</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи печени и желчного пузыря <strong>700</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи поджелудочной железы <strong>450</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи предстательной железы <strong>450</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи семенников <strong>450</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи шейной области <strong>500</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Узи щитовидной железы <strong>700</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+            </div>   
+
+            <!-- <img src="images/5.jpg" alt="" whilde="500">     -->
+            <h3 class="section__subtitle">Рентген</h3>
+            <div class="price__cards cards">
+                <article class="card price__card">
+                    <p>Цифровой рентген 1 проекция <strong>850</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Цифровой рентген 2 проекции <strong>1400</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Описание рентгеновского снимка <strong>500</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Рентгенологическое обследование черепа,шеи <strong>1450</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Рентгенологическое исследование органов грудной полости <strong>2000-2700</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Рентгенологическое исследование тазобедренного сустава</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Рентгенологическое исследование локтевого сустава</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+            </div>
+
+            <img src="images/6.jpg" alt="" width="500">
+            <h3 class="section__subtitle">Стоматология</h3>
+            <div class="price__cards cards">
+                <article class="card price__card">
+                    <p>Приём стоматолога <strong>1350</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Чистка зубов ультразвуком , кошка (с рентгеном ,анастезией) <strong>5100</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Субтотальная экстракция зубов, кошка/собака <strong>3000/6700</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Экстракция 1 зуба, кошка/собака <strong>7600/8300</strong></p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Стачивание зубов у грызунов <strong>1020</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Обрезка передних зубов кролика <strong>470</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Стачивание зубов у грызунов <strong>1020</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+            </div>
+
+            <h3 class="section__subtitle">Груминг</h3>
+            <div class="price__cards cards">
+                <article class="card price__card">
+                    <p>Приклеивание "Антицарапок" <strong>300</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Обрезка когтей кошки/кролики <strong>250</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Обрезка когтей собакам до 15 кг/более 15 кг <strong>370/400</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+            </div>
+            <h3 class="section__subtitle">Другие услуги</h3>
+            <div class="price__cards cards">
+                <article class="card price__card">
+                    <p>Обрезка когтей собакам до 15 кг/более 15 кг <strong>370/400</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Вязка собак <strong>1000</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+                <article class="card price__card">
+                    <p>Консультация специалиста онлайн <strong>900</strong> рублей</p>
+                    <button>
+                        Записаться
+                    </button>
+                </article>
+            </div>
+
+        </section>
+
+        <section id="special">
+            <h2 class="section__title">Специалисты</h2>
+
+            <div class="cards price__cards">
+                <article class="card special__card">
+                    <img src="images/7.jpg" alt="" width="500">
+                    <h4>Иванов Дмитрий Александрович</h4>
+                    <hr>
+                    <button>Записаться</button>
+                    <p>Главный врач клиники,врач-терапевт, врач визуальной диагностики (УЗИ, рентген)
+        Закончил Марийский аграрный колледж по специальности “Ветеринария”.</p>
+
+                            
+                        <!-- В данный момент получает высшее образование в МарГУ, по специальности “Ветеринария”.
+                        Пройденные курсы:
+                        - в 2021 годЫу прослушал лекции на тему: “Визуальная диагностика грудной полости, брюшной полости” в г. Екатеринбурге, лектор Видянова Зоя Борисовна, врач визуальной диагностики высшей категории
+                        - курсы УЗИ мелких домашних животных в г Екатеринбург, лектор Видянова Зоя Борисовна, врач визуальной диагностики высшей категории
+                        - декабрь 2021 года, прошел обучение по торакальной рентгенографии в г Екатеринбург, лектор Клавдия Навлетова
+                        - В 2021 году прослушал лекции по теме: Внутренние болезни.
+                        Модуль 1. “Анамнез, осмотр, рутинные тесты и диагностический план ”
+                        Модуль 2. “Нефрология – болезни почек и мочевыделительных путей”
+                        Модуль 3. “Анемии, болезни почек и МВП, репродуктивных органов”, в  Образовательном центре коллегии ветеринарных специалистов “ Eduvet ”
+                        - в мае 2022 года прошел обучение по рентгенограмме грудной клетки, лектор Симаков Матвей Сергеевич, ведущий специалист визуальной диагностики в клинике Вет Сити Центр, г  Москва -->
+
+                </article>
+
+                <article class="card special__card">
+                    <img src="images/8.jpg" alt="" width="500">
+                     <h4>Волкова Ольга Ивановна</h4>
+                     <hr>
+                     <button>Записаться</button>
+                    <p>Врач общей практики. Лечение всех внутренних болезней животных (гастроэнтерология, нефрология, пульмонология, инфекционные болезни, 
+        гематология, базовая неврология, оказание экстренной помощи).</p>
+        <!-- Основная специализация - онкология, интенсивная терапия.
         В 2016-2021 учёба в РУДН, аграрный факультет, специалитет ветеринария (г. Москва).
         2021-2023 Программа интернатуры в Ветеринарной клинике "Белый Клык".
-        2018-2023 Работа в Ветеринарной клинике "Белый Клык".</p>
-        <p> Стрельцова Ирина Вениаминовна</p>
-        <img src="images/9.jpg" alt="" width="500">
-        <a class="about__button" href="#">Записаться</a>
-        <p>Врач-терапевт, анастезиолог</p>
-        <p>Ситникова Юлия Алексеевна</p>
-        <img src="images/10.jpg" alt="" width="500">
-        <a class="about__button" href="#">Записаться</a>
-        <p>Врач-терапевт, стоматолог, офтальмолог</p>
-        <p>Кузнецова Анна Алексеевна</p>
-        <img src="images/11.jpg" alt="" width="500">
-        <a class="about__button" href="#">Записаться</a>
-        <p>Врач-терапевт, кардиолог, УЗИ-специалист</p>
-        <p>Шабалина Мария Валентиновна</p>
-        <img src="images/12.jpg" alt="" width="500">
-        <a class="about__button" href="#">Записаться</a>
-        <p>Врач-терапевт</p>
+        2018-2023 Работа в Ветеринарной клинике "Белый Клык". -->
+                </article>
 
+                <article class="card special__card">
+                    <img src="images/9.jpg" alt="" width="500">
+                     <h4>Стрельцова Ирина Вениаминовна</h4>
+                     <hr>
+                     <button>Записаться</button>
+                    <p>Врач-терапевт, анастезиолог</p>
+
+                </article>
+                <article class="card special__card">
+                    <img src="images/10.jpg" alt="" width="500">
+                     <h4>Ситникова Юлия Алексеевна</h4>
+                     <hr>
+                     <button>Записаться</button>
+                        <p>Врач-терапевт, стоматолог, офтальмолог</p>
+                </article>
+                
+                <article class="card special__card">
+                    <img src="images/11.jpg" alt="" width="500">
+                    <h4>Кузнецова Анна Алексеевна</h4>
+                    <hr>
+                    <button>Записаться</button>
+                    <p>Врач-терапевт, кардиолог, УЗИ-специалист</p>
+                </article>
+                <article class="card special__card">
+                    <img src="images/9.jpg" alt="" width="500">
+                    <h4>Шабалина Мария Валентиновна</h4>
+                    <hr>
+                    <button>Записаться</button>
+                    <p>Врач-терапевт</p>
+                </article>
+
+            </div>
+        </section>
     </main>
-    <footer class="footer container"> 
+    <footer class="footer"> 
        <p class="footer__autor">Волкова Алёна BT-21</p>
     </footer>
 </body>
