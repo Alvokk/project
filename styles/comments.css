@@ -1,0 +1,36 @@
+
+#comments {}
+
+.comments__cards {
+    width: fit-content;
+    display: block;
+    columns: 3;
+}
+
+.comments__card {
+    break-inside: avoid;
+}
+
+.comments__card > p:first-child {
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.comments__card > p:last-child {
+    text-indent: 20px;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width:1200px) {
+    .comments__cards {
+        columns: 2;
+    }
+}
+
+@media (max-width:760px) {
+    .comments__cards {
+        columns: 1;
+    }
+}

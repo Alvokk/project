@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ветеринарная клиника</title>
+    <!-- <link rel="styessheet" href="styles/normalize.css"> -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+
+
+
+    <!-- 
+        Notification
+    -->
+    
+    <div class="notification unselectable">
+        <div class="notif-content">
+            <p class="notif-close">&times;</p>
+            <p class="notif-text"></p>
+        </div>
+    </div>
+
+
+
+    <!-- 
+        Modal Window
+    -->
+
+    <!-- 
+        Modal for sign__btn button
+    -->
+    <div class="modal-window modal-sign__btn-window">
+        <div class="modal-wrapper">
+            <p class="modal-close"><span class="modal__close">&times;</span></p>
+            <h3 class="modal-title">Оставить заявку на запись</h3>
+            <div class="modal-content">
+                <form action="#" method="post" onsubmit="handleSubmitSignBtn(event)">
+                    <label for="phone">
+                        <!-- <p></p> -->
+                        <input type="text" name="phone" id="phone" placeholder="Номер телефона" value="+7 ">
+                    </label>
+
+                    <button type="submit" class="modal-btn">Записаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 
+        Modal for sign__up button
+    -->
+    <div class="modal-window modal-sign__up-window">
+        <div class="modal-wrapper">
+            <p class="modal-close"><span class="modal__close">&times;</span></p>
+            <h3 class="modal-title">Регистрация</h3>
+            <div class="modal-content">
+                <form action="#" method="post" onsubmit="handleSubmitSignUp(event)">
+                    <label for="name__up">
+                        <input type="text" name="name" id="name__up" placeholder="Ваше имя">
+                    </label>
+                    <label for="email__up">
+                        <input type="email" name="email" id="email__up" placeholder="E-mail">
+                    </label>
+                    <label for="password__up">
+                        <input type="password" name="password" id="password__up" placeholder="Пароль">
+                    </label>
+                    <label for="password-repeat__up">
+                        <input type="password" name="passwordRepeat" id="password-repeat__up" placeholder="Повтор пароля">
+                    </label>
+
+                    <button type="submit" class="modal-btn">регистрация</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 
+        Modal for sign__in button
+    -->
+    <div class="modal-window modal-sign__in-window">
+        <div class="modal-wrapper">
+            <p class="modal-close"><span class="modal__close">&times;</span></p>
+            <h3 class="modal-title">Вход</h3>
+            <div class="modal-content">
+                <form action="#" method="post" onsubmit="handleSubmitSignIn(event)">
+                    <label for="email__in">
+                        <input type="email" name="email" id="email__in" placeholder="E-mail">
+                    </label>
+                    <label for="password__in">
+                        <input type="password" name="password" id="password__in" placeholder="Пароль">
+                    </label>
+
+                    <button type="submit" class="modal-btn">вход</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <header class="header">
+        <a class="header__logo-wrap" href="index.html">
+            <img class="header__logo" src="images/logo.jpg" alt="Логотип" width="400">
+        </a>
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item menu__item--active">
+                    <a class="menu__link" href="./index.html#">Главная</a>
+                </li>
+                <li a class="menu__item">
+                    <a class="menu__link" href="./index.html#about">О клинике</a>
+                </li>    
+                <li class="menu__item">
+                    <a class="menu__link" href="./index.html#contacts">Контакты</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./index.html#price">Услуги и цены</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./index.html#comments">Отзывы</a> 
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./index.html#clients">Клиентам</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link sign__btn" href="#">Записаться на приём</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__buttons">
+            <nav class="header__button sign-in__btn">Вход</nav>
+            <nav class="header__button sign-up__btn">Регистрация</nav>
+        </div>
+        <p class="header__name">Профиль</p>
+        <details class="menu__burger">
+            <summary>
+                <div></div>
+                <div></div>
+                <div></div>
+            </summary>
+            <nav class="header__menu__min-screen">
+                <ul class="menu__min-screen">
+                    <li class="menu__item__min-screen menu__item--active__min-screen">
+                        <a class="menu__link__min-screen" href="./index.html#">Главная</a>
+                    </li>
+                    <li a class="menu__item__min-screen">
+                        <a class="menu__link__min-screen" href="./index.html#about">О клинике</a>
+                    </li>    
+                    <li class="menu__item__min-screen">
+                        <a class="menu__link__min-screen" href="./index.html#contacts">Контакты</a>
+                    </li>
+                    <li class="menu__item__min-screen">
+                        <a class="menu__link__min-screen" href="./index.html#price">Услуги и цены</a>
+                    </li>
+                    <li class="menu__item__min-screen">
+                        <a class="menu__link__min-screen" href="./index.html#comments">Отзывы</a> 
+                    </li>
+                    <li class="menu__item__min-screen">
+                        <a class="menu__link__min-screen" href="./index.html#clients">Клиентам</a>
+                    </li>
+                    <li class="menu__item__min-screen">
+                        <a class="menu__link__min-screen sign__btn" href="#">Записаться на приём</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="profile__data">
+            <div class="profile__content">
+                <h2 class="profile__title">Учётные данные</h2>
+                <p class="profile__name"></p>
+                <p class="profile__email"></p>
+                <p class="profile__password"></p>
+
+                <button class="log-out__btn">Выйти</button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer"> 
+        <h3 class="footer__title">Часто задаваемые вопросы</h3>
+        <article>
+            <button>В каком возрасте можно стерилизовать кошку?</button>
+            <button>Делают ли анастезию при кастрации кота?</button>
+            <button>От каких заболеваний нужна вакцинация собак?</button>
+            <button>Можно ли собаке чистить зубы ультразвуком без наркоза?</button>
+            <button>Зачем чипировать животное?</button>
+            <button>Наша домашняя кошка постоянно чешется. Она нигде не гуляет, и других животных у нас нет. Может это аллергия на корм?</button>
+            <button>Можно ли поставить собаке пломбу на зуб?</button>
+            <button>В каком возрасте вакцинируют щенков и коЫтят?</button>
+        </article>
+        <article>
+            <p class="footer__text">
+                <span>г.Йошкар-Ола</span>
+                <span>Ул.Комсомольская 118</span>
+                <span>С 8:00-17:00</span>
+            </p>
+            <button>Смотреть на карте</button>
+        </article>
+        
+        <article>
+            <p class="footer__text">
+                <span>Ул.Прохорова 55</span>
+                <span>С 8:00-17:00</span>
+            </p>
+            <button>Смотреть на карте</button>
+        </article>
+
+       <p class="footer__autor">Волкова Алёна BT-21</p>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+<script src="./js/script-profile.js"></script>
+</html>

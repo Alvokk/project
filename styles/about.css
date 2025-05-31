@@ -93,6 +93,19 @@
     transition: all .2s;
 }
 
+.about__contacts {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.about__contacts__content {
+    margin-top: 20px;
+}
+
+
 @media (hover:hover) {
     .about__days:hover > p {
         background-color: transparent;

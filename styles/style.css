@@ -1,3 +1,4 @@
+
 /* Подключение шрифтов */
 @import "fonts.css";
 /* Подключение основных стилей */
@@ -11,4 +12,23 @@
 /* Подключение стилей относящихся к footer */
 @import "footer.css";
 /* Подключение стилей относящихся к main */
+
+/* Подключение шрифтов */
+@import "fonts.css";
+/* Подключение основных стилей */
+@import "base.css";
+/* Подключение стилей относящихся к header */
+@import "header.css";
+@import "about.css";
+@import "price.css";
+@import "special.css";
+@import "comments.css";
+@import "modal-window.css";
+@import "notification.css";
+@import "profile.css";
+@import "typography.css";
+/* Подключение стилей относящихся к footer */
+@import "footer.css";
+/* Подключение стилей относящихся к main */
+
 @import "main.css";
