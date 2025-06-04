@@ -16,6 +16,10 @@ body {
     overflow-x: hidden;
 }
 
+#root {
+  display: none;
+}
+
 strong {
     font-weight: 900;
 }

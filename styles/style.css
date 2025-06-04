@@ -26,6 +26,8 @@
 @import "modal-window.css";
 @import "notification.css";
 @import "profile.css";
+@import "swiper.css";
+@import "loader.css";
 @import "typography.css";
 /* Подключение стилей относящихся к footer */
 @import "footer.css";

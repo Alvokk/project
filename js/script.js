@@ -164,7 +164,7 @@ if (handleAuthMiddleware()) {
 }
 
 headerName.addEventListener("click", () => {
-    window.location.replace("./profile.html");
+    window.location.replace("/profile.html");
 })
 
 
