@@ -2,12 +2,13 @@
 
 
 // определяем элемент, который будем двигать
-const swiperContent = document.querySelector(".swiper-content");
+const swiperContent = document.querySelector(".my-swiper-content");
 // определяем кнопки для сдвига
-const swiperLArrow = document.querySelector(".swiper-l-arrow");
-const swiperRArrow = document.querySelector(".swiper-r-arrow");
+const swiperLArrow = document.querySelector(".my-swiper-l-arrow");
+const swiperRArrow = document.querySelector(".my-swiper-r-arrow");
 // опредяем список элементов, которые будут сдвигаться
-const swiperItems = document.querySelectorAll(".swiper-item");
+const swiperItems = document.querySelectorAll(".my-swiper-item");
+
 
 // ширина элемента
 const widthItem = () => swiperItems[0].clientWidth;
@@ -44,4 +45,4 @@ swiperLArrow.addEventListener("click", handleLeftArrow);
 swiperRArrow.addEventListener("click", handleRightArrow);
 
 
-console.log('скрипт "script-swiper.js" отработал');
+console.log('Cкрипт: "script-swiper.js" отработал');

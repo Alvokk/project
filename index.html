@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ветеринарная клиника</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -182,24 +183,42 @@
             <h1 class="title-site">Ветеринарная клиника "Четыре лапы"</h1>
 
 
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-content">
-                        <div class="swiper-item">
+            <!-- Лично написанный Swiper -->
+            <div class="my-swiper">
+                <div class="my-swiper-wrapper">
+                    <div class="my-swiper-content">
+                        <div class="my-swiper-item">
                             <img src="images/slider1.jpg" alt="">
                         </div>
-                        <div class="swiper-item">
+                        <div class="my-swiper-item">
                             <img src="images/slider2.jpg" alt="">
                         </div>
-                        <div class="swiper-item">
+                        <div class="my-swiper-item">
                             <img src="images/slider3.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="swiper-arrows">
-                    <img src="images/left-arrow.png" class="swiper-l-arrow" alt="" />
-                    <img src="images/right-arrow.png" class="swiper-r-arrow" alt="" />
+                <div class="my-swiper-arrows">
+                    <img src="images/left-arrow.png" class="my-swiper-l-arrow" alt="" />
+                    <img src="images/right-arrow.png" class="my-swiper-r-arrow" alt="" />
                 </div>
+            </div>
+
+            <h3 class="section__subtitle">Слайдер с ипользованием библиотеки</h3>
+             <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/slider1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slider2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slider3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
 
 
@@ -632,7 +651,6 @@
                     </article>
                 </div>
 
-                <img src="images/6.jpg" alt="" width="500">
                 <h3 class="section__subtitle">Стоматология</h3>
                 <div class="cards">
                     <article class="card price__card">
@@ -737,7 +755,7 @@
                         <p>Врач-терапевт</p>
                     </article> -->
 
-                </div>
+                </div> 
             </section>
 
             <section id="comments">
@@ -879,5 +897,14 @@
 <script src="scripts/script-loader.js"></script>
 <script src="scripts/script.js"></script>
 <script src="scripts/script-swiper.js"></script>
-<script src="scripts/special-output.js"></script>
+<script src="scripts/script-special-output.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
+  </script>
 </html>

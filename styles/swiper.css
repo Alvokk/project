@@ -1,11 +1,11 @@
 
 
-.swiper {
+.my-swiper {
     position: relative;
     width: 100%;
 }
 
-.swiper-wrapper {
+.my-swiper-wrapper {
     width: 80%;
     max-width: 1440px;
     margin: 0 auto;
@@ -13,26 +13,26 @@
     border-radius: 10px;
 }
 
-.swiper-content {
+.my-swiper-content {
     width: 100%;
     display: flex;
     transition: transform 0.3s ease; /* плавная анимация сдвига */
 }
 
-.swiper-item {
-    flex: 0 0 100%; /* каждый слайд занимает всю ширину .swiper */
+.my-swiper-item {
+    flex: 0 0 100%; /* каждый слайд занимает всю ширину .my-swiper */
     width: 100%;
     height: auto; /* или фиксированная высота */
 }
 
-.swiper-item > * {
+.my-swiper-item > * {
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.swiper-l-arrow,
-.swiper-r-arrow {
+.my-swiper-l-arrow,
+.my-swiper-r-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -47,11 +47,11 @@
     transition:  scale .2s;
 }
 
-.swiper-l-arrow {
+.my-swiper-l-arrow {
     left: 5px;
 }
 
-.swiper-r-arrow {
+.my-swiper-r-arrow {
     right: 5px;
 }
 
@@ -59,33 +59,33 @@
 
 
 @media (hover:hover) {
-    .swiper-l-arrow:hover,
-    .swiper-r-arrow:hover {
+    .my-swiper-l-arrow:hover,
+    .my-swiper-r-arrow:hover {
         scale: 1.07;
     }
 }
 
 
 @media (max-width:760px) {
-    .swiper-wrapper {
+    .my-swiper-wrapper {
         width: 100%;
     }
 
-    .swiper-l-arrow,
-    .swiper-r-arrow {
+    .my-swiper-l-arrow,
+    .my-swiper-r-arrow {
         transform: translateY(0);
         top: 100%;
     }
 
-    .swiper-arrows {
+    .my-swiper-arrows {
         width: fit-content;
         display: flex;
         gap: 20px;
         margin: 20px auto 0;
     }
 
-    .swiper-l-arrow,
-    .swiper-r-arrow {
+    .my-swiper-l-arrow,
+    .my-swiper-r-arrow {
         position: static;
     }
 }
